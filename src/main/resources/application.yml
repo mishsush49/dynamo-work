@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: dynamo-work
+
+# DynamoDB Configuration
+aws:
+  dynamodb:
+    endpoint: http://localhost:8000
+    region: us-east-2
+
+# Logging Configuration
+logging:
+  level:
+    com.amazonaws.services.dynamodbv2: DEBUG
+    com.springboot.dynamodb: DEBUG
+
+# Server Configuration
+server:
+  port: 9500
